@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Form Example</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container" role="main">
+			
+            <h1>Behold. A Form.</h1>
+			
+            <form action="my-form.php" method="post">
+                <label class="control-label" for="name">Name</label> <input type="text" placeholder="Your Name" name="name"> <label class="control-label" for="email">Email</label> <input type="text" name="email" placeholder="Email">
+                <fieldset id="color-choices">
+                    <legend>What's Your Favorite Color?</legend> 
+                    <label class="radio">
+                        <input type="radio" name="favoriteColor" value="red">
+                        Red
+                    </label> 
+                    <label class="radio">
+                        <input type="radio" name="favoriteColor" value="orange">
+                        Orange
+                    </label> 
+                    <label class="radio">
+                        <input type="radio" name="favoriteColor" value="yellow">
+                        Lellow
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="favoriteColor" value="green">
+                        Green
+                    </label>
+                    <label class="radio"><input type="radio" name="favoriteColor" value="blue">
+                        Blue
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="favoriteColor" value="violet">
+                        Purple
+                    </label>
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div><!-- end #container -->
+    </body>
+</html>
